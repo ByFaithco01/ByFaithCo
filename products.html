@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Produtos — ByFaithCo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="assets/product_male_back.jpg" alt="logo" class="logo"></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Produtos</a>
+        <a href="contact.html">Contato</a>
+        <a href="login.html" class="btn">Entrar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Produtos</h1>
+    <div class="filters">
+      <input id="search" placeholder="Buscar produto..." />
+    </div>
+    <div id="products-grid" class="grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year2"></span> ByFaithCo</p>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { initProductsPage } from './js/products.js';
+    initProductsPage();
+  </script>
+</body>
+</html>

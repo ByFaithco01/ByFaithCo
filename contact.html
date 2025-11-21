@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contato — ByFaithCo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="assets/product_male_back.jpg" alt="logo" class="logo"></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Produtos</a>
+        <a href="contact.html">Contato</a>
+        <a href="login.html" class="btn">Entrar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contato</h1>
+    <form id="contact-form" class="contact-form">
+      <input id="name" placeholder="Seu nome" required>
+      <input id="email" type="email" placeholder="Seu email" required>
+      <textarea id="message" placeholder="Mensagem" rows="6" required></textarea>
+      <button class="btn" type="submit">Enviar</button>
+    </form>
+    <div id="contact-msg"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year3"></span> ByFaithCo</p>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { initContactPage } from './js/app.js';
+    initContactPage();
+  </script>
+</body>
+</html>

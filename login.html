@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Login — ByFaithCo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="auth-container">
+    <div class="auth-card">
+      <img src="assets/product_male_back.jpg" alt="ByFaithCo" class="logo-small">
+      <h2>Entrar</h2>
+      <form id="login-form">
+        <input id="email" type="email" placeholder="Email" required>
+        <input id="password" type="password" placeholder="Senha" required>
+        <button type="submit" class="btn">Entrar</button>
+      </form>
+      <p>ou <a href="#" id="show-register">Criar conta</a></p>
+      <div id="msg" class="msg"></div>
+    </div>
+  </main>
+
+  <script type="module">
+    import { initAuthPage } from './js/app.js';
+    initAuthPage();
+  </script>
+</body>
+</html>

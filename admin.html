@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Admin — ByFaithCo</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="assets/product_male_back.jpg" alt="logo" class="logo"></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Produtos</a>
+        <a href="contact.html">Contato</a>
+        <a href="login.html" class="btn">Entrar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Admin — Gerenciar Produtos</h1>
+    <form id="product-form">
+      <input id="title" placeholder="Nome do produto" required>
+      <textarea id="description" placeholder="Descrição" required></textarea>
+      <input id="price" type="number" placeholder="Preço (R$)" required>
+      <input id="stock" type="number" placeholder="Quantidade em estoque" required>
+      <input id="image" type="file" accept="image/*" required>
+      <button class="btn" type="submit">Adicionar Produto</button>
+    </form>
+    <div id="admin-msg"></div>
+  </main>
+
+  <script type="module">
+    import { initAdminPage } from './js/products.js';
+    initAdminPage();
+  </script>
+</body>
+</html>
